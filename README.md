@@ -65,17 +65,14 @@ Battery health is classified based on capacity:
 * Feature Importance Analysis
 
 ---
+## Results
 
-## 📊 Results
+- Random Split Accuracy: 97.06%
+- Cross-Battery Accuracy: 92.86%
+- Without Capacity: 76.79%
 
-* Achieved high classification accuracy on structured dataset
-* Key findings:
 
-  * **Capacity** is the most significant indicator of battery health
-  * **Current and power-related features** strongly influence classification
-  * Voltage-based features contribute moderately
 
----
 
 ## 📈 Visual Outputs
 
@@ -89,11 +86,11 @@ All outputs are stored in the `results/` directory.
 
 ---
 
-## 🧠 Key Insights
+## Key Insights
 
-* Battery degradation is primarily reflected in **capacity loss**
-* Electrical behavior (current, power) provides additional predictive power
-* Feature engineering plays a crucial role in improving model performance
+- Capacity is the strongest predictor of degradation
+- Model generalizes well across batteries
+- Degradation signals exist beyond capacity
 
 ---
 
