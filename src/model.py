@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 def train_model(df):
-    X = df.drop("label", axis=1)
+    X = df.drop(columns=["label", "battery_id"], errors="ignore")
     y = df["label"]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
